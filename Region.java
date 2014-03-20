@@ -20,13 +20,13 @@ public class Region {
 	public ArrayList<Team> sortIntoTeams(ArrayList<String> strings) {
 		ArrayList<Team> region = new ArrayList<Team>();
 		for (String a : strings) {
-			ArrayList<String> change = a.split(",");
-			String name = change.get(0);
-			int seed = Integer.parseInt(change.get(1));
-			double wp = Double.parseDouble(change.get(2));
-			Team newTeam = new Team(name, seed, wp);
-			region.add(newTeam);
-			System.out.println(newTeam);
+			ArrayList<String> change = strings.split(",");
+			//String name = change.get(0);
+			//int seed = Integer.parseInt(change.get(1));
+			//double wp = Double.parseDouble(change.get(2));
+			//Team newTeam = new Team(name, seed, wp);
+			//region.add(newTeam);
+			System.out.println(change);
 		}
 		return region;
 	}
